@@ -10,14 +10,24 @@ int main()
 	upper = 300;	//setting the upper limit for the temperature table.
 	step = 20;	//step size for the temperature reading to range from the lower to upper limit.
 	fahr = lower;
-	printf("Fahrenfiet\tcelsius\n");
+	for(int i = 0; i <= step; i++)
+	{
+		printf("_");
+	}
+	printf("\n");
+	printf("Fahrenhiet\tcelsius\n");
 	while(fahr <= upper)
 	{
-		celsius = (5/9)*(fahr - 32);	//this is the formulla to convert the fahrenhiet degree to celsius degree of 
-						//temperature.
+		celsius = (5.0/9.0)*(fahr - 32);    //this is the formulla to convert the fahrenhiet degree to celsius degree of 
+						    //temperature.
 		printf("%10.1f%12.2f\n", fahr, celsius);
 		fahr += step;	
 	}
+	/*for(fahr = 0, fahr <= upper, fahr++)   \\this is the alternate way of printing fahrenhiet to celcius conversion table
+	 * {
+	 * 	celsius = (5.0/9.0)*(fahr - 32);
+	 * 	printf("%3d%6.1f\n", fahr, (5.0/9.0)*(fahr - 32));
+	 * 	}*/
 	while(step >= 0)	//This was unnecessary, but added a line to know the end of the table.
 	{
 		printf("_");
