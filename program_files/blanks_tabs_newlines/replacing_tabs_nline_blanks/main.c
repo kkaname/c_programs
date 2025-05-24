@@ -7,15 +7,18 @@ int main()
 	{
 		if(c == ' ')
 		{
-			printf("\\b");
+			printf("\'\\b\'");
 		}
 		else if(c == '\t')
 		{
-			printf("\\t");
+			printf("\'\\t\'");
 		}
 		else if(c == '\\')
 		{
-			printf("\\\\");
+			printf("\'\\\\\'");
+		}
+		else if(c == '\n'){
+			putchar(c);
 		}
 		else{
 			putchar(c);
