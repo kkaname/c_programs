@@ -6,7 +6,8 @@ int lcm(int a, int b){
 		n = a;
 	else 
 		n = b;
-	for(int i = n; ; i += n){
+	int end = a*b;
+	for(int i = n; i <= end; i += n){
 		if(i%a == 0 && i%b == 0){
 			return i;
 		}
