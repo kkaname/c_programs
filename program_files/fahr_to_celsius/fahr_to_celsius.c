@@ -12,7 +12,7 @@ int main()
 	fahr = lower;
 	for(int i = 0; i <= step; i++)
 	{
-		printf("_");
+		printf("*");
 	}
 	printf("\n");
 	printf("Fahrenhiet\tcelsius\n");
@@ -20,7 +20,7 @@ int main()
 	{
 		celsius = (5.0/9.0)*(fahr - 32);    //this is the formulla to convert the fahrenhiet degree to celsius degree of 
 						    //temperature.
-		printf("%10.1f%12.2f\n", fahr, celsius);
+		printf("%10.1f%11.2f\n", fahr, celsius);
 		fahr += step;	
 	}
 	/*for(fahr = 0, fahr <= upper, fahr++)   \\this is the alternate way of printing fahrenhiet to celcius conversion table
@@ -30,7 +30,7 @@ int main()
 	 * 	}*/
 	while(step >= 0)	//This was unnecessary, but added a line to know the end of the table.
 	{
-		printf("_");
+		printf("*");
 		step -= 1;
 	}
 	printf("\n");
