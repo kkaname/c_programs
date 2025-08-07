@@ -4,6 +4,7 @@ void main()
 {
 	int c;
 	while((c = getchar()) != EOF)
+    //EOF is defined under <stdio.h>
 	{
 		putchar(c);
 	}
