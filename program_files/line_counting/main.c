@@ -2,14 +2,14 @@
 //this program takes the user input and outputs the number of lines.
 int main()
 {
-	int c, i = 0;
+	int c, num_of_lines = 0;
 	while((c = getchar()) != EOF)
 	{
 		if(c == '\n')
 		{
-			++i;
+			++num_of_lines;
 		}
 	}
-	printf("\n%d\n", i);
+	printf("\n%d\n", num_of_lines);
 	return 0;
 }
