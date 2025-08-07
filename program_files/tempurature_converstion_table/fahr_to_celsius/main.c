@@ -3,13 +3,13 @@
 
 int main()
 {
-	//first we declare the required variables that we will be using in the program under float datatype to be more precise.
 	float fahr, celsius, lower, upper, step;
 	//now we decide the upper and lower bound for the calculation.
 	lower = 0;	//setting the lower limit for the temperature table.
 	upper = 300;	//setting the upper limit for the temperature table.
 	step = 20;	//step size for the temperature reading to range from the lower to upper limit.
 	fahr = lower;
+    //this is unnecessary, but helps in defining the table
 	for(int i = 0; i <= step; i++)
 	{
 		printf("*");
