@@ -5,34 +5,35 @@
 
 int main()
 {
-	int c, status, n_word, n_char, n_new_line, n_tab, n_blank;
-	status = OUT;
-	n_word = n_char = n_new_line = n_tab = n_blank = 0;
+	int c, state, num_of_words, num_of_char, num_of_newlines, num_of_tabs, num_of_blanks;
+	num_of_words = num_of_char = num_of_newlines = num_of_tabs = num_of_blanks = 0;
+	state = OUT;
 
 	while((c = getchar()) != EOF)
 	{
-		++n_char;
+		++num_of_char;
 		if(c == ' ' || c == '\t' || c == '\n'){
 			if(c == ' '){
-				++n_blank;
+				++num_of_blanks;
 			}
 			else if(c == '\t'){
-				++n_tab;
+				++num_of_tabs;
 			}
 			else{
-				++n_new_line;
+				++num_of_newlines;
 			}
-			if(status = IN){
-				status = OUT;
-				++n_word;
+			if(state == IN){
+				state = OUT;
+				++num_of_words;
 			}
-			else
-				status = OUT;
 		}
 		else
-			status = IN;
+			state = IN;
 	}
+    if (state == IN) //in case the inputs ends without training backspaces
+        ++num_of_words;
+
 	printf("\n");
-	printf("From the input, there are %d words, %d characters, %d tab characters, %d new line character and %d blank spaces\n", n_word, n_char, n_tab, n_new_line, n_blank);
+	printf("From the input, there are %d words, %d characters, %d tab characters, %d new line character and %d blank spaces\n", num_of_words, num_of_char, num_of_tabs, num_of_newlines, num_of_blanks);
 	return 0;
 }
