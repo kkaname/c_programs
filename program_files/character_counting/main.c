@@ -1,5 +1,6 @@
+//this program counts and outputs the number of characters present in the string that is given by the user
 #include<stdio.h>
-//this program counts and outputs the number of characters present in a string input until EOF is not encountered
+
 int main()
 {
 	long int i = 0;
