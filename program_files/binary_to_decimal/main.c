@@ -1,11 +1,11 @@
-//this program uses basic mathe to covert a given binary number to decimal number
+//this program uses convert a given binary number to to decimal number
+//NOTE:IF YOUR USING GCC COMPILER, USE -LM FLAG TO LINK THE MATH.H LIBRARY
 #include<stdio.h>
 #include<math.h>
-//if using gcc, the incluce -lm flag to link the math.h library
-
 
 void to_decimal(int n){
 	int i = 0, ans = 0;
+    //if the binary number is zero
 	if(n == 0)
 		printf("0\n");
     //if the number is not equal to zero
