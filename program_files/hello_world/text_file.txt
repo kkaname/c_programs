@@ -1,5 +1,0 @@
-pre-processed --> gcc -E main.c -o main.i
-pre-processed to object --> gcc -c main.i -o main.o
-linking --> gcc main.o -o main
-
-running --> ./executable_file_name
