@@ -18,7 +18,7 @@ main:
 	leaq	.LC0(%rip), %rax
 	movq	%rax, %rdi
 	call	puts@PLT
-	nop
+	movl	$0, %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
