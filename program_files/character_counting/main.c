@@ -3,7 +3,7 @@
 
 int main()
 {
-	long int i = 0;
+	long unsigned int i = 0;
 	printf("Enter string input:\n");
 	while(getchar() != EOF)
 	{
@@ -12,7 +12,7 @@ int main()
 	printf("\n");
 	/*we can also use for loop for this, insted of while*/
 	/*for(i = 0; getchar() != EOF; i++)
-	 * ; <--- this is called 'null statement', cause the required process is dont in the testing and incrementing part of the f		     or loop*/
-	printf("%ld\n", i);
+	 * ; <--- this is called 'null statement', cause the required process is dont in the testing and incrementing part of the for loop*/
+	printf("%lu\n", i);
 	return 0;
 }
