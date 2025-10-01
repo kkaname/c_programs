@@ -1,5 +1,6 @@
-#include<stdio.h>
 //this program basically uses an array for size 10 to store the occurance of number in the corresponding subscripts of the same array
+#include<stdio.h>
+
 int main(){
     int c, num_of_whiteSpaces, num_of_other_characters, num_of_digits[10];
     for(int i = 0; i < 10; i++){
