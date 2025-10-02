@@ -1,6 +1,11 @@
-#include<stdio.h>
+/*
+ *This program returns the number of distinct elements present in a given array
+ */
 
-int countdistinct(int arr[], int size){
+#include<stdio.h>
+#include<stdlib.h>
+
+int countdistinct(int* arr, int size){
 	int count = 0;
 	int is_distinct;
 	for(int i = 0; i < size; i++){
@@ -18,15 +23,16 @@ int countdistinct(int arr[], int size){
 	return count;
 }
 
-int main(){
+int main(void){
 	int n;
 	printf("Enter the number of elements:");
 	scanf("%d", &n);
-	int arr[n];
+	int *arr = malloc(sizeof(int) * n);
 	printf("Enter %d elements:\n", n);
 	for(int i = 0; i < n; i++){
 		scanf("%d", &arr[i]);
 	}
 	printf("there are %d distinct elements.\n", countdistinct(arr, n));
+    free(arr);
 	return 0;
 }
