@@ -3,7 +3,8 @@
 
 int main()
 {
-	float fahr, celsius, lower, upper, step;
+	float fahr, celsius;
+    int lower, upper, step;
 	//now we decide the upper and lower bound for the calculation.
 	lower = -20;	
 	upper = 200;	//setting the upper limit for the temperature table.
