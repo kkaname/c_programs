@@ -14,7 +14,7 @@ int main()
 			}
 		}
 		else{
-			i = 0;
+			space_flag = 0;
 			putchar(c);
 		}
 	}
