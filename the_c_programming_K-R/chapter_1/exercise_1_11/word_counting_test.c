@@ -4,12 +4,13 @@
 #define OUT 0 //specifies outside a word
 
 int main(void){
-    int c, n_words, state;
+    int c, n_words, n_char, state;
 
-    n_words = 0;
+    n_words = n_char = 0;
     state = OUT; 
     while((c = getchar()) != EOF)
     {
+        ++n_char;
         if (c == ' ' || c == '\t' || c == '\n')
             state = OUT;
         
@@ -20,7 +21,7 @@ int main(void){
         }
         
     }
-    printf("\nNumber of words = %d.\n", n_words);
+    printf("\nNumber of words = %d\nNumber of characters = %d.\n", n_words, n_char);
     
     return 0;
 }
