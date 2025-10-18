@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*Exercise 1-3: conversion table of fahrenheit to celcius degree. */
+/*Exercise 1-3: Program to print conversion table of fahrenheit to celcius degree with a heading above the table.*/
 
 int main(void)
 {
