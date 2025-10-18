@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*Exercise 1-5: create a conversion  table of celcius to fahrenheit from 300^o to 0^o.*/
+/*Exercise 1-5: program to print a conversion table of celcius to fahrenheit from 300^o to 0^o, e.i., in reverse order.*/
 
 int main(void)
 {
