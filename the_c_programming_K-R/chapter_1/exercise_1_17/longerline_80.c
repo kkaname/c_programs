@@ -2,7 +2,7 @@
 
 #define MAXLEN 200
 
-/*Exercise 1.7: Program  to print all input lines whose length are more than 80 or dont print.*/
+/*Exercise 1.7: Program  to print all input lines whose length are more than 80 characters or else does'nt print the line.*/
 
 int getLine(char line[]);
 
@@ -30,13 +30,11 @@ int getLine(char line[])
     i = len = 0; 
     while ((c = getchar()) != EOF && c != '\n')
     {
-        line[i] = c;
-        ++i;
+        line[i++] = c;
         ++len;
     }
     if (c == '\n'){
-        line[i] = '\n';
-        ++i;
+        line[i++] = '\n';
         ++len;
     }
 
