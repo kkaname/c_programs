@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+/*Exercise 1.11: Program that prints number of words and number of characters in user input.*/
+
 #define IN 1 //specifies inside a word
 #define OUT 0 //specifies outside a word
 
