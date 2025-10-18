@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*Exercise 1-7: prints the value of EOF to the output screen.*/
+/*Exercise 1.07: Program to print the value of EOF to the output screen.*/
 
 int main(void)
 {

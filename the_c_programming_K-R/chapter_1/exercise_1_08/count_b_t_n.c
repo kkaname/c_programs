@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*Exercise 1-8: counts the number of blanks, tabs and newlines.*/
+/*Exercise 1-8: Program that counts the number of blanks, tabs and newlines from the user input.*/
 
 int main(void)
 {
