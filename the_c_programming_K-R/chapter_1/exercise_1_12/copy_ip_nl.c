@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+/*Exercise 1.12: Program that prints its input one word per line from the user input.*/
+
 #define IN 1
 #define OUT 0
 
