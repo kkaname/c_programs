@@ -39,8 +39,7 @@ int getLine(char line[])
         line[i] = c;
 
     if(c == '\n'){
-        line[i] == c;
-        i++;
+        line[i++] == c;
     }
     line[i] = '\0';
 
