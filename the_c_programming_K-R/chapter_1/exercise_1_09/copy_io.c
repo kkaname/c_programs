@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+/*Exercise 1.09: Program to copy its input to its output, replacing each string of one or more blanks by a single blank.*/
+
 int main(void)
 {
     int c, last_c = '\0';
