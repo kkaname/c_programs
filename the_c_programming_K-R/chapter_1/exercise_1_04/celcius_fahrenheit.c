@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-/*Exercise 1-4: create a conversion  table of celcius to fahrenheit*/
+/*Exercise 1-4: Program that prints a conversion  table of celcius to fahrenheit*/
 
 int main(void)
 {
@@ -21,5 +21,6 @@ int main(void)
         printf("%3.0f\t\t%6.2f\n", celcius, fahr);
         celcius = celcius + step;
     }
+
     return 0;
 }
