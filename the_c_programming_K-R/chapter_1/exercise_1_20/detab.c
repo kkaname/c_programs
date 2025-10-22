@@ -6,30 +6,29 @@
 
 int main(void)
 {
-    int c, i, tab_stop = 1;
+    int c, current_col, tab_stop;
     unsigned int no_spaces;
 
-    i = 0;
+    current_col = 1;
     while((c = getchar()) != EOF)
     {
         if (c == '\t'){
-            no_spaces = tab_stop - i - 1;
+            no_spaces = TAB_WIDTH - (current_col % TAB_WIDTH);
             while(no_spaces){
                 putchar(' ');
                 --no_spaces;
+                ++current_col;
+
             }
 
         }
         else {
+            ++current_col;
             putchar(c);
+            if (c == '\n'){
+                current_col = 0;
+            }
         }
-        ++i;
-        printf("%d\n", i);
-        printf("%d\n", tab_stop);
-        if (tab_stop < i)
-            tab_stop += TAB_WIDTH; 
-        printf("%d\n", i);
-        printf("%d\n", tab_stop);
     }
     
     return 0;
