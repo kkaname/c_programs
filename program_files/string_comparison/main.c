@@ -1,4 +1,4 @@
-//this program uses self-implemented strcmp() function, without needed string.h header file, to compare two given strings
+//this program uses self-implemented strcmp() function, without needing string.h header file, to compare two given strings
 #include<stdio.h>
 //here we create our own implementation of strcmp, used to compare two given strings
 int strComp(char s1[], char s2[]){
