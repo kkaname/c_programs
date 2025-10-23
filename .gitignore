@@ -1,0 +1,32 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Compiled executables
+*.exe
+*.out
+a.out
+
+# Static libraries
+*.a
+*.lib
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Debug files
+*.dSYM/
+*.su
+
+# Editor temporary files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
