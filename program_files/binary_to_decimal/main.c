@@ -10,7 +10,7 @@ void to_decimal(int n){
 		printf("0\n");
     //if the number is not equal to zero
 	while(n != 0){
-		ans += (n%2)*pow(2, i);
+		ans += (n%10)*pow(2, i);
 		n = n/10;
 		i++;
 	}
