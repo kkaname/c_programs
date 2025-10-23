@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-//fucntion to find the approximate squareroot of a number
+//function to find the approximate squareroot of a number
 int sq_root(int n){
 	int res = 1;
 	while(res*res <= n){
@@ -15,7 +15,7 @@ int IsPrime(int x){
 		return 0;
 	}
 	else{
-		for(int i = 3; i < sq_root(x); i += 2){
+		for(int i = 3; i <= sq_root(x); i += 2){
       			if(x%i == 0){
       				return 0;
       		}
@@ -24,7 +24,7 @@ int IsPrime(int x){
 	return 1;
 }
 
-//this is the main function that calculates the prime number, which uses sq_root() and IsPrime() fucntion
+//this is the main function that calculates the prime number, which uses sq_root() and IsPrime() function
 int primefactor(int n){
 	for(int i = 0; i <= n; i++){
 		if(IsPrime(i) == 1){
