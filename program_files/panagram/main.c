@@ -1,6 +1,6 @@
 /*
  *This program checks whether a given string is panagram or not.
- *Panagram is a string which as atleast one of all the letters in alphabet
+ *Panagram is a string which has at least one of all the letters in alphabet
  */
 #include<stdio.h>
 #include<string.h>
@@ -9,22 +9,21 @@
 const int MAX_LEN = 100;
 
 bool isPanagram(char s[]) {
-    int num_alpha = 26, j;
+    int num_alpha = 26;
     if(strlen(s) < num_alpha)
         return false;
     
-    bool status = true;
+    bool found;
     
     for(int i = 0; i < num_alpha; i++){
-        for(j = 0; j < strlen(s); j++){
-            if(tolower(s[j]) != i + 97)
-                status = false;
-            else{
-                status = true;
+        found = false;
+        for(int j = 0; j < strlen(s); j++){
+            if(tolower(s[j]) == i + 97){
+                found = true;
                 break;
             }
         }
-        if(!status)
+        if(!found)
             return false;
     }
     return true;
@@ -37,6 +36,6 @@ int main(void){
     if(isPanagram(str))
         printf("\nThe string is a Panagram.\n");
     else
-        printf("\nThe string in not a Panagram\n");
+        printf("\nThe string is not a Panagram\n");
     return 0;
 }
