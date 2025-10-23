@@ -2,7 +2,7 @@
 
 int gcd(int a, int b){
 	int n;
-	if(a > b)
+	if(a < b)
 		n = a;
 	else 
 		n = b;
@@ -12,6 +12,7 @@ int gcd(int a, int b){
 		}
 	
 	}
+	return 1;
 }
 
 
