@@ -57,7 +57,7 @@ c_programs/
 ## 📖 The C Programming Language (K&R)
 
 Currently working through the classic textbook exercises:
-- ✅ Chapter 1: A Tutorial Introduction (22+ exercises completed)
+- ✅ Chapter 1: A Tutorial Introduction (24 exercises completed)
 - ✅ Chapter 2: Types, Operators and Expressions (started)
 - ⏳ Remaining chapters in progress
 
@@ -77,9 +77,9 @@ gcc -o binary_to_decimal main.c -lm
 
 ## 📊 Progress Tracker
 
-- **Total Programs:** 60+ programs
+- **Total Programs:** 61+ programs
 - **Practice Programs:** 33 programs
-- **K&R Exercises:** 24 exercises
+- **K&R Exercises:** 25 exercises
 - **LeetCode Problems:** 1 problem
 - **Commits:** 161+ commits
 
