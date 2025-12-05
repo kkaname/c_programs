@@ -15,7 +15,6 @@ int main(void)
     printf("Maximum value of signed char: %d\n", SCHAR_MAX);
     printf("Minimum value of signed char: %d\n", SCHAR_MIN);
     printf("Maximum value of unsigned char: %d\n\n", UCHAR_MAX);
-    putchar('\n');
 
     //to display the ranges of INT
     printf("########## INT ##########\n");
@@ -37,9 +36,9 @@ int main(void)
 
     //to display long long int
     printf("################ LONG LONG INT #################\n");
-    printf("unsigned long long int max: %llu\n", ULLONG_MAX);
     printf("signed long long int min: %lld\n", LLONG_MIN);
     printf("signed long long int max: %lld\n\n", LLONG_MAX);
+    printf("unsigned long long int max: %llu\n", ULLONG_MAX);
     
     //to display flaoting type numbers
     printf("################ FLOAT PRECISION NUMBERS #################\n");
