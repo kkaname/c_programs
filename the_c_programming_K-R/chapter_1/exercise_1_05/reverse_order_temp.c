@@ -19,13 +19,14 @@ int main(void)
     {
         fahr = (9.0 / 5.0) * celcius - 32.0f;
         printf("%3.0f\t\t%6.2f\n", celcius, fahr);
-        celcius = celcius - step;
+        celcius -= step;
     }
 
     /*Alternate way to do is by using for loop:
-     * >for(celcius = upper; celcius >= lower; celcius = celcius - step);
-     * >fahr = (9.0 / 5.0) * celcius - 32.0f;
-     * >printf("%3.0f\t\t%6.2f\n", celcius, fahr);
+     * >for(celcius = upper; celcius >= lower; celcius -= step){
+     * >    fahr = (9.0 / 5.0) * celcius - 32.0f;
+     * >    printf("%3.0f\t\t%6.2f\n", celcius, fahr);
+     * >}
      */
 
     return 0;
