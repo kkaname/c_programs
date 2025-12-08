@@ -25,7 +25,7 @@ int main(void)
         }
     }
 
-    printf("\nThere are %d of blank characters , %d of tab characters, and %d of newlie-characters.\n", num_blank, num_tab, num_newline);
+    printf("\nnumber of blank lines:%d\nnumber of tabs:%d\nnumber of newlines:%d\n", num_blank, num_tab, num_newline);
     
     return 0;
 
