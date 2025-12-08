@@ -19,7 +19,7 @@ int main(void)
     {
         fahr = (9.0 / 5.0) * celcius - 32.0f;
         printf("%3.0f\t\t%6.2f\n", celcius, fahr);
-        celcius = celcius + step;
+        celcius += step;
     }
 
     return 0;
