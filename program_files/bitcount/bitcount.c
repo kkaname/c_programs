@@ -13,6 +13,14 @@ int bitcount(unsigned x){
     return no_bits;
 }
 
+/*Alternate method using bit manipulation.
+ *>for (i = 0; x != 0; x >>= 1){
+ *>     if (x & 1)
+ *>         ++i;
+ *>}
+ *>return i;
+ */
+
 int main(void){
     unsigned int x;
     printf("Enter a number: ");
