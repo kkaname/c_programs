@@ -13,6 +13,15 @@ int str_len(char *s){
     return i;
 } 
 
+/* Another method using pointed arithmatic
+ * int str_len(char *s) {
+ *  int n;
+ *  for (n = 0; *s != 0; s++) {
+ *      ++n;
+ *  }
+ *}
+ */
+
 int main(void){
     char s[MAXLEN];
     printf("Enter a string to determine its length: ");
