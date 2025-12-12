@@ -13,12 +13,22 @@ int str_len(char *s){
     return i;
 } 
 
-/* Another method using pointed arithmatic
+/* Another method using pointer arithmatic
  * int str_len(char *s) {
  *  int n;
  *  for (n = 0; *s != 0; s++) {
  *      ++n;
  *  }
+ *}
+ */
+
+/* Another method using pointer arithmatic of address
+ * int str_len(char *s) {
+ *  int *p = s;
+ *  while (*p !=  '\0'){
+ *      p++;
+ *  }
+ *  return p - s;
  *}
  */
 
