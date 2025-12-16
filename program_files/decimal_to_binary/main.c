@@ -3,10 +3,12 @@
 
 void to_binary(int n){
 	int i = 0, binary[32];
+	printf("0b");
 	if(n == 0){
 		printf("0\n");
-		
+		return;
 	}
+
 	while(n != 0){
 		binary[i] = n%2;
 		n = n/2;
