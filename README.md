@@ -7,14 +7,12 @@ This repository documents my journey learning C programming through practice pro
 ```
 c_programs/
 ├── program_files/          # Practice programs covering C fundamentals
-├── the_c_programming_K-R/  # Exercises from "The C Programming Language" by K&R
 └── leetCode/               # LeetCode problems solved in C
 ```
 
 ## 🎯 Learning Goals
 
 - Master C programming fundamentals
-- Complete all exercises from "The C Programming Language" (K&R)
 - Solve algorithmic problems to strengthen problem-solving skills
 - Write clean, well-documented, and efficient code
 
@@ -79,7 +77,6 @@ gcc -o binary_to_decimal main.c -lm
 
 - **Total Programs:** 61+ programs
 - **Practice Programs:** 33 programs
-- **K&R Exercises:** 25 exercises
 - **LeetCode Problems:** 1 problem
 - **Commits:** 161+ commits
 
@@ -107,7 +104,6 @@ To test any program:
 
 ## 🚀 Future Plans
 
-- [ ] Complete remaining K&R chapters
 - [ ] Add more LeetCode problems
 - [ ] Implement data structures (linked lists, trees, etc.)
 - [ ] Add more algorithmic challenges
